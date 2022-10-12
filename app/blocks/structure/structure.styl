@@ -1,0 +1,252 @@
+.structure
+    background-color $c-white
+    height w(1180)
+    position relative
+    +below(768px)
+        height wm(1530)
+        overflow-x hidden
+
+    @keyframes circleWaywing
+        0%
+            transform scale(0)
+        
+        10%
+            opacity 1
+            transform scale(.1)
+        
+        25% 
+            opacity 1
+            transform scale(.25)
+        
+        95% 
+            opacity 1
+            transform scale(.95)
+        
+        100% 
+            opacity 0
+            transform scale(1)
+        
+
+    .acp-animation, .acp-animation__line
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        display block
+        width w(750)
+        height w(750)
+        +below(768px)
+            width wm(750)
+            height wm(750)
+    
+    .acp-animation__line
+        top 0
+        left 0
+        border-radius 50%
+        box-shadow 0 0 0 1px #cfcfcf
+        opacity 0
+        animation circleWaywing 9s linear infinite
+        &:first-child
+            animation-delay -2s
+        &:nth-child(2)
+            animation-delay -5s
+        &:nth-child(3)
+            animation-delay -8s
+        &:nth-child(4)
+            animation-delay -11s
+
+    &__uronext-image
+        position absolute
+        top w(335)
+        left 50%
+        transform translateX(-50%)
+        width w(510)
+        img
+            width 100%
+            position relative
+            z-index 1
+        +below(768px)
+            top wm(300)
+            width wm(510)
+            left 50%
+            transform translateX(-50%)
+            img
+                width 100%
+
+    &__cranberry
+        display flex
+        flex-direction row
+        justify-content flex-start
+        position absolute
+        top w(125)
+        right w(290)
+        +below(768px)
+            top wm(50)
+            right wm(40)
+
+    &__image-cranberry
+        width w(195)
+        img
+            width 100%
+        +below(768px)
+            width wm(195)
+            img
+                width 100%
+
+    &__image-vitamin
+        width w(150)
+        img
+            width 100%
+        +below(768px)
+            width wm(150)
+            img
+                width 100%
+
+    &__image-mannose
+        width w(210)
+        img
+            width 100%
+        +below(768px)
+            width wm(210)
+            img
+                width 100%
+        
+    &__item
+        padding-left w(30)
+        width w(470)
+        flex-direction column
+        +below(768px)
+            padding-left wm(35)
+            width wm(470)
+
+    &__vitamin
+        width w(375)
+        position absolute
+        top w(190)
+        left w(290)
+        +below(768px)
+            top wm(520) 
+            left wm(25)
+            width wm(370)
+
+    &__mannose
+        width w(355)
+        position absolute
+        top w(505)
+        right w(290)
+        +below(768px)
+            top wm(800)
+            right wm(20)
+            width wm(360)
+
+    &__title
+        font-family $ff-lato-b
+        font-weight 700
+        font-size w(24)
+        line-height w(32)
+        letter-spacing 0.03em
+        text-transform uppercase
+        color $c-red_2
+        &:nth-child(2)
+            padding-top w(25)
+        &:last-child
+            padding-top w(30)
+        +below(768px)
+            padding-top wm(25)
+            font-size wm(24)
+            line-height wm(32)
+            &:nth-child(2)
+                padding-top wm(20)
+            &:last-child
+                padding-top wm(10)
+
+    &__info
+        padding-top w(5)
+        font-family $ff-verdana
+        font-style normal
+        font-weight 400
+        font-size w(20)
+        line-height w(24)
+        color $c-black
+        span
+            font-weight 700
+            font-family $ff-verdana-b
+        &:nth-child(2)
+                padding-top w(20)
+        &:last-child
+            padding-top w(10)
+        +below(768px)
+            font-size wm(20)
+            line-height wm(24)
+            &:nth-child(2)
+                padding-top wm(20)
+            &:last-child
+                padding-top wm(10)
+
+    &__action
+        position absolute
+        bottom w(60)
+        left w(200)
+        +below(768px)
+            bottom wm(60)
+            left wm(30)
+
+    &__uronext
+        display flex
+        flex-direction row
+        justify-content flex-start
+
+    &__image
+        padding-top w(10)
+        width w(260)
+        img
+            width 100%
+        +below(768px)
+            padding-top wm(10)
+            width wm(260)
+            img
+                width 100%
+
+
+    &__text
+        margin-left 0
+        font-family $ff-lato-m
+        font-weight 500
+        font-size w(64)
+        line-height w(68)
+        letter-spacing 0.03em
+        color $c-red
+        &:last-child
+            margin-left w(80)
+        +below(768px)
+            margin-left 0
+            font-size wm(64)
+            line-height wm(68)
+            &:last-child
+                margin-left wm(30)
+
+    &__btn
+        margin-top w(40)
+        width w(260)
+        height w(65)
+        background $c-yellow
+        border-radius w(50)
+        font-family $ff-lato-m
+        font-style normal
+        font-weight 500
+        font-size w(32)
+        line-height w(32)
+        text-align center
+        letter-spacing 0.03em
+        text-transform uppercase
+        color $c-white
+        border none
+        &:hover
+            opacity 0.7
+        +below(768px)
+            margin-top wm(40)
+            width wm(260)
+            height wm(65)
+            border-radius wm(50)
+            font-size wm(32)
+            line-height wm(32)

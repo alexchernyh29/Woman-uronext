@@ -1,0 +1,33 @@
+.header
+    background-color $c-yellow
+    position sticky
+    z-index 1
+    top 0
+    left 0
+    min-height w(125)
+    width 100%
+    +below(768px)
+        min-height wm(125)
+
+    &__wrap
+        padding-top w(40)
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-content center
+        +below(768px)
+            padding-top wm(40)
+
+    &__logo
+        width w(235)
+        img
+            width 100%
+        +below(768px)
+            width wm(235)
+
+    &__link
+        width w(215)
+        img
+            width 100%
+        +below(768px)
+            width wm(215)

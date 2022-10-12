@@ -1,0 +1,32 @@
+mixin advantages()
+
+    +b('section').advantages
+        .container
+            +e.wrap
+                +e.image
+                    img(src='/images/advantages.png')
+                +e.advantages
+                    +e('h4').title Преимущества
+                    +e.logo
+                        img(src='/images/uronext.png')
+                    +e.list
+                        +e.item
+                            +e.check_info
+                                img(src='/images/check.svg')
+                            +e('p').text <span>3&nbsp;активных компонента,</span> дозировки которых позволяют обеспечить комплексный эффект
+                        +e.item
+                            +e.check_info
+                                img(src='/images/check.svg')
+                            +e('p').text <span>Европейское производство</span> (Словения)<br> в&nbsp;строгом соответствии со&nbsp;стандартами GMP
+                        +e.item
+                            +e.check_info
+                                img(src='/images/check.svg')
+                            +e('p').text <span>7&nbsp;дней&nbsp;/ 1&nbsp;саше</span> в&nbsp;день&nbsp;&mdash; короткий и&nbsp;удобный курс приема, не&nbsp;влияющий на&nbsp;график жизни
+                        +e.item   
+                            +e.check_info
+                                img(src='/images/check.svg')
+                            +e('p').text <span>Оригинальный продукт,</span> не&nbsp;имеющий аналогов на&nbsp;российском рынке
+                        +e.item
+                            +e.check_info
+                                img(src='/images/check.svg')
+                            +e('p').text <span>Разрешен беременным и&nbsp;кормящим</span> женщинам, не&nbsp;содержит консервантов и&nbsp;ГМО

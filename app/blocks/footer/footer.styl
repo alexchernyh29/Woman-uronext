@@ -1,0 +1,45 @@
+.footer
+    position relative
+    background $c-white
+
+    &__text
+        padding w(65) w(300)
+        background-color $c-red
+        font-family $ff-lato-m
+        font-style normal
+        font-weight 500
+        font-size w(32)
+        line-height w(36)
+        text-align center
+        letter-spacing 0.03em
+        color $c-white
+        span
+            font-family $ff-lato-b
+            font-weight 700
+        +below(768px)
+            padding wm(50) wm(25)
+            font-size wm(32)
+            line-height wm(36)
+
+    &__info
+        padding w(30) 0 w(25)
+        font-family $ff-bebasneue
+        font-style normal
+        font-weight 400
+        font-size w(96)
+        line-height w(96)
+        text-align center
+        letter-spacing 0.03em
+        text-transform uppercase
+        color $c-black
+        opacity 0.25
+        +below(768px)
+            text-align justify
+            padding wm(35) 0 wm(20)
+            font-size wm(62)
+            line-height wm(64)
+            letter-spacing 0.4em
+            span
+                font-size wm(77)
+                line-height wm(64)
+                letter-spacing 0.03em

@@ -1,0 +1,10 @@
+mixin sharing(isShowTitle)
+
+    +b.sharing
+        +e('ul').list
+            +e('li').item
+                +e('a').link(href='#')
+                    +e(src=`/images/icon-od.svg`).icon._od
+            +e('li').item
+                +e('a').link(href='#')
+                    +e(src=`/images/icon-vk.svg`).icon._vk

@@ -1,0 +1,21 @@
+mixin test()
+
+    +b('section').test
+        +header()
+        .container
+            +e.content
+                +e.question
+                    +e.numbers
+                        +e('p').counter <span>1</span>
+                        +e('p').slash /
+                        +e('p').amount 5
+                    +e('p').text Где ты&nbsp;могла видеть этот туалет?
+                +e.img-question
+                    img(src='/images/test-image-1.png')
+                +e.list
+                    +e.item
+                    +e.item
+                +e.girl
+                    img(src='/images/test-girl.png')
+                +e.napkins
+                    img(src='/images/test-napkins.png')

@@ -1,0 +1,35 @@
+mixin structure()
+
+    +b('section').structure
+        .conteiner
+            +e.wrap
+                +e.uronext-image
+                    .acp-animation
+                        .acp-animation__line
+                        .acp-animation__line
+                        .acp-animation__line
+                        .acp-animation__line
+                    img(src='/images/footer_uronext.png')
+                +e.cranberry
+                    +e.image-cranberry
+                        img(src='/images/cranberry.png')
+                    +e.item
+                        +e('p').title Экстракт клюквы (500 мг)
+                        +e('p').info Содержит большое количество проантоцианидинов, которые <span>помогают снижать острый дискомфорт</span>, связанный с&nbsp;походами в&nbsp;туалет
+                +e.vitamin
+                    +e.image-vitamin
+                        img(src='/images/vitamind3.png')
+                    +e('p').title Витамин D3 (40 МЕ)
+                    +e('p').info <span>Поддерживает собственные защитные силы организма,</span> позволяя противостоять повторам этого неприятного состояния
+                +e.mannose
+                    +e.image-mannose
+                        img(src='/images/dmannose.png')
+                    +e('p').title Д-манноза (2000 мг)
+                    +e('p').info Способствует <span>естественному выводу бактерий</span> из&nbsp;организма во&nbsp;время мочеиспускания, предотвращая их&nbsp;прикрепление к&nbsp;стенкам мочевого пузыря
+            +e.action
+                +e.uronext 
+                    +e.image
+                        img(src='/images/uronext.png')
+                    +e('p').text – тройная
+                +e('p').text формула помощи
+                +e('button').btn купить

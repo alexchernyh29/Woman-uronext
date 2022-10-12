@@ -1,0 +1,154 @@
+.promo
+    position relative
+    height 100vh
+    background url('/images/promo.jpg') no-repeat
+    background-size cover
+    overflow hidden
+
+    .header
+        z-index 0
+        +below(768px)
+            padding 0 wm(25)
+
+    .container
+        +below(768px)
+            padding 0      
+
+    &__image
+        position absolute
+        left w(850)
+        top w(40)
+        img
+            width w(715)
+            +below(768px)
+                width wm(710)
+        +below(768px)
+            top 4.75vw
+            left wm(50)
+
+    &__content
+        padding-top w(50)
+        +below(768px)
+           padding-top 52.25vw
+           text-align center
+
+    &__title
+        position relative
+        z-index 2
+        width w(750)
+        padding-left w(13)
+        background-color $c-bard
+        +below(768px)
+            width wm(800)
+            padding-left wm(0)
+
+    &__title-1
+        position relative
+        z-index 2
+        width w(410)
+        margin-top w(20)
+        padding-left w(13)
+        letter-spacing 0.03em
+        background-color $c-bard
+        +below(768px)
+            margin-left wm(122)
+            padding-left wm(0)
+            width wm(490)  
+            text-align center 
+
+
+    &__title-text
+        transform translateY(-27%)
+        font-family $ff-lato
+        font-weight 700
+        font-size w(144)
+        line-height 0.7
+        letter-spacing 0.03em
+        color $c-white
+        span
+            color $c-yellow_4
+        +below(768px)
+            text-align center
+            font-weight 700
+            font-size wm(144)
+            line-height wm(128)
+            font-weight 700
+
+    &__subtitle
+        font-family $ff-lato
+        padding-top w(15)
+        padding-left w(13)
+        width w(436)
+        font-weight 700
+        font-size w(24)
+        line-height w(26)
+        letter-spacing 0.03em
+        color $c-yellow
+        text-transform uppercase
+        +below(768px)
+            position relative
+            z-index 1
+            width 100%
+            text-align center
+            padding wm(20) wm(110) 0
+            font-size wm(30)
+            line-height wm(32)
+
+    &__text
+        padding-top w(15)
+        padding-left w(13)
+        font-family $ff-lato
+        width w(575)
+        font-weight 400
+        font-size w(21)
+        line-height w(26)
+        letter-spacing 0.03em
+        color $c-white
+        +below(768px)
+            padding wm(17) wm(66) 0
+            font-size wm(25)
+            width 100%
+            line-height wm(26)
+        b
+            font-weight bold
+
+    &__footer
+        margin 0 auto
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-content center
+        padding-top w(45)
+        padding-left w(13)
+        +below(768px)
+            flex-direction column
+            align-items: center;
+            justify-content: center;
+            padding-top wm(45)
+
+    &__button
+        display inline-block
+        padding-top w(20)
+        color #000
+        text-decoration none
+        width w(295)
+        height w(70)
+        border-radius w(35)
+        background-color $c-yellow
+        font-family $ff-lato
+        font-weight 600
+        font-size w(26)
+        line-height w(26)
+        text-align center
+        letter-spacing 0.03em
+        border 0
+        text-transform uppercase
+        &:hover
+            opacity .7
+        +below(768px)
+            padding-top wm(23)
+            width wm(295)
+            height wm(70)
+            border-radius wm(35)
+            font-size wm(26)
+            line-height wm(26)

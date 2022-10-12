@@ -1,0 +1,57 @@
+.sharing
+    position relative
+    top w(15)
+    +below(768px)
+        top wm(25)
+        height wm(95)
+
+    &__list
+        display flex
+        justify-content center
+
+    &__item
+        margin-right w(10)
+        position relative
+        width w(50) 
+        height w(50)
+        background $c-yellow
+        border-radius 50%
+        transition opacity .3s
+        +below(768px)
+            width wm(65)
+            height wm(65)
+
+        &:hover
+            opacity .7
+        
+        +below(768px)
+            &:nth-child(2)
+                margin-left wm(20)
+
+    &__link
+        display inline-block
+        height 100%
+        width 100%
+        border-radius 50%
+
+    &__icon
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%,-50%)
+
+        &_vk
+            width w(30)
+            img
+                width 100%
+            +below(768px)
+                width wm(35)
+
+        &_od
+            width w(17)
+            img
+                width 100%
+            +below(768px)
+                width wm(25)
+                
+            

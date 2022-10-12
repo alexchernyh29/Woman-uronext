@@ -1,0 +1,32 @@
+import('sprites/*')
+import('helpers/svg-size')
+@import 'helpers/variables'
+@import 'helpers/mixins'
+@import 'helpers/fonts'
+@import 'helpers/optimize'
+
+import('../blocks/**/*')
+
+.container
+    max-width w(1920)
+    padding 0 w(175)
+    width 100%
+    margin 0 auto
+    +below(768px)
+        padding 0 wm(25)
+
+.presentation
+    overflow-x hidden
+
+body
+    .result
+        display none
+    
+    &.show-result
+        .result
+            display block
+        .test
+            display none
+    
+    [data-anchor="section2"] .arrow
+        left 93%

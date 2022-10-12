@@ -1,0 +1,30 @@
+@keyframes sdb05 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
+
+.arrow
+    position absolute
+    bottom 20px
+    left 50%
+    margin-left w(-25)
+    width w(50)
+    animation: sdb05 1.5s infinite;
+    z-index 10
+    +below(768px)
+        width wm(50)
+        margin-left 0
+        left auto
+        right wm(25)
+
+    img
+        width 100%

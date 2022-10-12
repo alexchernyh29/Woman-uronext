@@ -1,0 +1,179 @@
+.test
+    position relative
+    height 100vh
+    background url('/images/result-bg.jpg') no-repeat
+    background-size cover
+    overflow hidden
+
+    .header
+        z-index 0
+
+    &__content
+        padding-top w(20)
+        +below(768px)
+            padding-top wm(100)
+
+    &__question
+        display flex
+        justify-content center
+
+    &__numbers
+        background-color $c-red_1
+        width w(90)
+        height w(90)
+        border-radius 50%
+        margin-right w(35)
+        text-align center
+        font-family $ff-lato
+        color $c-yellow_4
+        font-weight 800
+        font-size w(32)
+        line-height w(32)
+        +below(768px)
+            width wm(95)
+            height wm(95)
+            font-size wm(36)
+            line-height wm(36)
+    
+    &__counter
+        padding-top w(15)
+        padding-left w(10)
+        width w(35)
+        +below(768px)
+            padding-top wm(15)
+            padding-left wm(10)
+            width wm(35)
+
+    &__slash
+        position absolute
+        width w(35)
+        margin-left w(25)
+        top w(175)
+        +below(768px)
+            width wm(35)
+            margin-left wm(25)
+            top wm(250)
+
+    &__amount
+        width w(35)
+        margin-left w(40)
+        +below(768px)
+            width wm(35)
+            margin-left wm(40)
+
+    &__text
+        font-family $ff-lato
+        padding-top w(27)
+        font-weight 600
+        font-size w(36)
+        line-height w(36)
+        letter-spacing 0.03em
+        color $c-black_1
+        +below(768px)
+            padding-top wm(27)
+            font-size wm(38)
+            line-height wm(36)
+    
+    &__img-question
+        margin-top w(15)
+        text-align center
+        img
+            width w(1060)
+            +below(768px)
+                width wm(700)
+                height wm(360)
+                margin-top wm(25)
+
+    &__girl
+        position absolute
+        bottom w(0)
+        left w(80)
+        img
+            width w(350)
+            +below(768px)
+                width wm(370)
+        +below(768px)
+            left wm(10)
+            bottom wm(0)
+
+    &__napkins
+        position absolute
+        top w(390)
+        right w(141)
+        img
+            width w(205)
+        +below(768px)
+            display none
+
+    &__list
+        display flex
+        flex-direction row
+        justify-content center
+        align-items center
+        padding-top w(20)
+        +below(768px)
+            position absolute
+            flex-direction column
+            margin-left 47%
+            bottom wm(150)
+
+    &__item
+        position relative
+        padding-left w(80)
+        width w(500)
+        font-family $ff-lato
+        font-weight 400
+        font-size w(28)
+        line-height 1.2
+        color $c-white
+        cursor pointer
+        transition color .3s
+        +below(768px)
+            font-size wm(30)
+            padding-left wm(80)
+            width wm(313)
+
+        &:last-child
+            margin-left w(60)
+            +below(768px)
+                margin-left wm(0)
+                margin-top wm(50)
+
+        &::before
+            content ''
+            position absolute
+            top 50%
+            left 0
+            transform translateY(-50%)
+            width w(53)
+            height w(53)
+            background url('/images/test-answer.png') no-repeat center
+            background-size 100%
+            +below(768px)
+                width wm(53)
+                height wm(53)
+        
+        &::after
+            content ''
+            position absolute
+            top 50%
+            left w(13)
+            transform translateY(-50%)
+            width w(27)
+            height w(27)
+            background-color #FFF57C
+            border-radius 50%
+            opacity 0
+            transition opacity .3s
+            +below(768px)
+                width wm(27)
+                height wm(27)
+                left wm(13)
+
+        &:hover
+            color #FFF57C
+            &::after
+                opacity 1
+
+
+

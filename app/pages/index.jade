@@ -1,0 +1,27 @@
+extends /blocks/layout-default/layout-default
+
+include /blocks/header/header
+include /blocks/footer/footer
+include /blocks/promo/promo
+include /blocks/sharing/sharing
+include /blocks/test/test
+include /blocks/product/product
+include /blocks/structure/structure
+include /blocks/result/result
+include /blocks/advantages/advantages
+include /blocks/presentation/presentation
+include /blocks/arrow/arrow
+
+block head
+	- var pageTitle = 'Project Template';
+
+block content
+	#fullpage 
+		.section
+			+promo()
+		.section
+			+test()
+			+result()
+			+arrow()
+		.section
+			+presentation()

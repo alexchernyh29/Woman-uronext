@@ -1,0 +1,421 @@
+.result
+    height 100vh
+    position relative
+    background url('/images/result-bg.jpg') no-repeat center
+    background-size cover
+    overflow hidden
+
+    &.show-popup
+        .result__popup
+            display flex
+
+    &.is-winner
+        .result__reset-text
+            display none
+
+        .result__wrap
+            padding-top w(80)
+            display flex
+            flex-direction row
+            justify-content flex-end
+            align-content center
+            +below(768px)
+                flex-direction column
+                justify-content center
+                align-items center
+
+        .result__stock
+            padding-top w(0)
+            margin-top w(20)
+            display flex
+            flex-direction column
+            justify-content space-evenly
+            +below(768px)
+                position absolute
+                bottom 70vw
+                padding-top wm(50)
+                align-items center
+        
+        .result__code
+            margin-top w(20)
+            +below(768px)
+                margin-left w(0)
+                margin-top wm(40)
+                padding wm(20) wm(5)
+                font-size wm(26)
+                line-height wm(26)
+
+        .result__btn-buy
+            margin-top w(20)
+            +below(768px)
+                margin-left w(0)
+                margin-top wm(20)
+                padding wm(20) wm(80)
+                font-size wm(24)
+                line-height wm(32)
+                border-radius wm(50)
+        
+        .result__lottery
+            position absolute
+            bottom 0
+            width 100%
+            padding-top w(30)
+            display flex
+            flex-direction column
+            align-items center
+            background-color $c-red
+
+        .result__condition
+            font-family $ff-lato-b
+            font-style normal
+            font-weight 700
+            font-size w(36)
+            line-height w(32)
+            text-align center
+            letter-spacing 0.03em
+            color $c-yellow
+            +below(768px)
+                width wm(580)
+                font-size wm(36)
+                line-height wm(32)
+
+        .result__actions
+            padding-top w(20)
+            display flex
+            flex-direction row
+            +below(768px)
+                padding-top wm(20)
+
+        .result__email
+            +below(768px)
+                width wm(400)
+
+        .result__woman
+            position absolute
+            bottom w(-10)
+            left 0
+            width w(600)
+            z-index 1
+            img
+                width 100%
+            +below(768px)
+                width wm(600)
+                z-index 0
+                bottom wm(200)
+                left wm(-60)
+
+    &__woman
+        position absolute
+        bottom w(-10)
+        left 0
+        width w(600)
+        z-index 1
+        img
+            width 100%
+        +below(768px)
+            width wm(600)
+            z-index 0
+            bottom wm(-10)
+            left wm(-60)
+
+    &__wrap
+        padding-top w(40)
+        display flex
+        flex-direction column
+        align-items center
+        +below(768px)
+            padding-top wm(70)
+            flex-direction column
+            align-items flex-end
+
+    &__title
+        font-family $ff-lato-b
+        font-style normal
+        font-weight 700
+        font-size w(74)
+        line-height w(68)
+        text-align center
+        letter-spacing 0.03em
+        color $c-black
+        span
+            color $c-red_1
+        +below(768px)
+            font-size wm(74)
+            line-height wm(68)
+    
+    &__header
+        text-align center
+        +below(768px)
+            width 100%
+    
+    &__reset-text
+        width w(500)
+        margin 0 auto w(10)
+        font-family $ff-lato
+        font-style normal
+        font-weight bold
+        font-size w(21)
+        line-height w(28)
+        +below(768px)
+            margin wm(20) auto 0
+            width 50%
+            font-size wm(21)
+            line-height wm(28)
+
+    &__text
+        width w(775)
+        margin 0 auto w(10)
+        padding-top w(20)
+        font-family $ff-lato
+        font-style normal
+        font-weight 400
+        font-size w(21)
+        line-height w(28)
+        text-align center
+        color $c-black
+        b
+            font-weight 700
+        +below(768px)
+            margin 0 auto w(10)
+            width 100%
+            padding-top wm(20)
+            font-size wm(21)
+            line-height wm(28)
+
+    &__stock
+        padding-top w(60)
+        display flex
+        flex-direction row
+        align-items center
+        +below(768px)
+            position absolute
+            bottom 45vw
+            right 10px
+            flex-direction column
+            padding-top wm(50)
+            align-items center
+
+    &__promocode
+        z-index 2
+        padding-left w(20)
+        font-family $ff-lato
+        font-style normal
+        font-weight 400
+        font-size w(32)
+        line-height w(38)
+        text-align center
+        color $c-white
+        $:first-child
+            padding-left w(0)
+        +below(768px)
+            font-size wm(32)
+            line-height wm(38)
+
+    &__code
+        width w(245)
+        border 0
+        margin-left w(20)
+        padding w(20) w(5)
+        font-family $ff-lato-m
+        font-style normal
+        font-weight 600
+        font-size w(26)
+        line-height w(26)
+        text-align center
+        letter-spacing 0.03em
+        text-transform uppercase
+        color $c-black_1
+        background-color $c-white
+        border-radius w(150)
+        +below(768px)
+            margin-left w(0)
+            margin-top wm(40)
+            padding wm(20) wm(5)
+            font-size wm(26)
+            line-height wm(26)
+            width wm(245)
+
+    &__btn-buy
+        margin-left w(20)
+        padding w(20) w(80)
+        font-family $ff-lato-m
+        font-style normal
+        font-weight 500
+        font-size w(24)
+        line-height w(32)
+        text-align center
+        letter-spacing 0.03em
+        text-transform uppercase
+        color $c-white
+        background $c-red
+        border-radius w(50)
+        border none
+        &:hover
+            opacity 0.7
+
+        +below(768px)
+            margin-left w(0)
+            margin-top wm(20)
+            padding wm(20) wm(80)
+            font-size wm(24)
+            line-height wm(32)
+            border-radius wm(50)
+
+    &__lottery
+        display none
+
+    &__condition
+        font-family $ff-lato-b
+        font-style normal
+        font-weight 700
+        font-size w(36)
+        line-height w(32)
+        text-align center
+        letter-spacing 0.03em
+        color $c-yellow
+        +below(768px)
+            font-size wm(36)
+            line-height wm(32)
+
+    &__actions
+        padding-top w(20)
+        display flex
+        flex-direction row
+        +below(768px)
+            padding-top wm(20)
+
+    &__email
+        padding w(20) w(10)
+        font-family $ff-lato-m
+        font-style normal
+        font-weight 600
+        font-size w(26)
+        line-height w(26)
+        text-align center
+        letter-spacing 0.03em
+        text-transform uppercase
+        color $c-white
+        background-color $c-red
+        border-radius w(150)
+        border w(1) solid $c-white
+        width w(620)
+        transition background-color .3s, color .3s
+
+        &::placeholder
+            color #fff
+
+        &:hover
+            color $c-red
+            background-color $c-white
+
+        +below(768px)
+            padding wm(20) wm(10)
+            font-size wm(24)
+            line-height wm(32)
+            border-radius wm(50)
+
+    &__btn-send
+        margin-left w(15)
+        padding w(20) w(55)
+        font-family $ff-lato-m
+        font-style normal
+        font-weight 500
+        font-size w(24)
+        line-height w(32)
+        text-align center
+        letter-spacing 0.03em
+        text-transform uppercase
+        color $c-white
+        background-color $c-yellow
+        border-radius w(50)
+        border 0
+        &:hover
+            color $c-yellow
+            background-color $c-white
+
+        +below(768px)
+            padding wm(20) wm(55)
+            font-size wm(24)
+            line-height wm(32)
+            border-radius wm(50)
+
+    &__agree
+        padding-top w(20)
+        padding-bottom w(30)
+        display flex
+        flex-direction row
+        justify-content flex-start
+        +below(768px)
+            padding-top wm(15)
+            padding-bottom wm(20)
+
+    &__checkbox
+        width w(25)
+        height w(25)
+        border w(1) solid $c-white
+        box-sizing border-box
+        border-radius w(5)
+        background-color $c-red
+        +below(768px)
+            width wm(25)
+            height wm(25)
+            border wm(1) solid $c-white
+
+    &__provision
+        padding-left w(10)
+        font-family $ff-lato
+        font-style normal
+        font-weight 400
+        font-size w(16)
+        line-height w(28)
+        color $c-white
+        +below(768px)
+            padding-left wm(10)
+            font-size wm(16)
+            line-height wm(28)
+    
+    &__popup
+        display none
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%);
+        width 30%
+        height 100px
+        padding 20px
+        background-color #fff
+        border-radius 20px
+        box-shadow 0 3px 15px rgba(0, 0, 0, .7)
+        flex-flow row nowrap
+        justify-content center
+        align-items center
+        +below(768px)
+            width 80%
+            height 100px
+    
+    &__close
+        position absolute
+        top 10px
+        right 10px
+        width 15px
+        height 15px
+        cursor pointer
+        &::after,
+        &::before
+            content ''
+            position absolute
+            top 50%
+            left 0
+            right 0
+            height 2px
+            background-color #000
+        
+        &::after
+            transform rotate(45deg)
+        &::before
+            transform rotate(-45deg)
+    
+    &__popup-text
+        font-size w(26)
+        +below(768px)
+            font-size wm(26)

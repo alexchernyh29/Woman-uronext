@@ -1,0 +1,23 @@
+mixin promo()
+
+    +b('section').promo
+        +header()
+        .container
+            +e.content 
+                +e.title.wow.slideInLeft
+                    +e('h4').title-text Хочу <span>WС</span>ё
+                +e.title-1.wow.slideInLeft
+                    +e('p').title-text знать
+                +e('p').subtitle.wow.slideInRight Угадай локацию для самых эффектных селфи этого года
+                +e('p').text.wow.slideInRight Уборная&nbsp;&mdash; самая дизайнерская часть модного ресторана. Неудивительно, что именно там нам нравится делать яркие и&nbsp;стильные селфи. В&nbsp;красном будуарном свете и&nbsp;в&nbsp;окружении живых растений, на&nbsp;фоне белоснежных стен и&nbsp;с&nbsp;ретромебелью в&nbsp;кадре. Угадай, в&nbsp;каком именно месте сняты эти фото, и&nbsp;попытайся выиграть сертификат на&nbsp;ужин в&nbsp;ресторане!<br/>Итак, прямо по&nbsp;коридору и&nbsp;налево: <b>начинаем!</b>
+                +e.image
+                    img(src='/images/promo-bg.png')
+                +e.footer.wow.slideInUp
+                    +e(href='#' id="moveTo").button пройти тест
+                    +sharing()
+                +arrow()
+
+
+
+
+
